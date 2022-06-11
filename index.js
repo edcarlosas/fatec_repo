@@ -1,15 +1,21 @@
-function btnClicked () {
-    const todoInput = document.getElementById('todoInput');
-    const list = document.getElementById('list');
-    const inputValue = todoInput.value;
+const todoInput = document.getElementById('todoInput');
 
-    const newTodo = document.createElement('Li');
-    const newContent = document.createTextNode(inputValue);
+todoInput.addEventListener('keyup', onTextEnter);
 
-    console.log(newTodo);
-    console.log(newContent);
+function onTextEnter (event) {
+  if (event.key != 'Enter' || event.keyCode != 13 || todoInput.value.trim() === "") {
+    return;
+  }
 
-    newTodo.appendChild(newContent);
-    list.appendChild(newTodo);
-    
+  const list = document.getElementById('list');
+  const inputValue = todoInput.value;
+
+  const newTodo = document.createElement('li');
+  
+  newTodo.setAttribute('class', 'row');
+
+  const newContent = document.createTextNode(inputValue);
+
+  newTodo.appendChild(newContent);
+  list.appendChild(newTodo);
 }

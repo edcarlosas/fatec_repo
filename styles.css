@@ -1,0 +1,30 @@
+body {
+    padding: 30px 50px;
+  }
+  
+  .text-field {
+    border: none;
+    height: 18px;
+  }
+  
+  .text-field:focus-visible {
+    outline: none;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding: 6px 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card {
+    width: 300px;
+    box-shadow: 2px 5px 15px #ccc;
+  }
+  
+  .icon-button {
+    width: 15px;
+    height: 15px;
+  }

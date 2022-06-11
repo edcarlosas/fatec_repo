@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>ToDoList</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css">
-    </head>
-    <body>
-        <section class="todo-list">
-            <input id="todoInput" type="text">
-            <button onclick="btnClicked()">Adicionar Tarefa</button>
-            <ul id="list">
-                <li>Itens Adicionado</li>
-            </ul>
-        </section>
-        <script src="/index.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do List</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="card todo-list">
+    <div class="row">
+      <button type="button" class="icon-button">
+        <img src="/assets/down-arrow-svgrepo-com.svg" alt="">
+      </button>
+      <input class="text-field" id="todoInput" type="text" placeholder="O que precisa ser feito">
+    </div>
+    <ul id="list"></ul>
+  </section>
+  <script src="index.js"></script>
+</body>
 </html>
